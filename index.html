@@ -12,8 +12,11 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark bg-gradient shadow p-1">
+    <header class="navbar navbar-expand-md sticky-top navbar-dark bg-dark bg-gradient shadow p-1">
         <div class="container-fluid">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+                aria-controls="bdSidebar" aria-expanded="false" aria-label="Toggle CV navigation">
+                <i class="bi bi-list"></i></button>
             <a class="navbar-brand" href="#"><img class="rounded me-2" src="img/profile.jpg" alt="" width="32"
                     height="32" class="d-inline-block align-text-top"> Damien Despas</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -29,8 +32,41 @@
         </div>
     </header>
     <div class="row">
-        <div class="offcanvas-md col-md-3 col-xl-2">
-            <nav id="navbar" class="navbar sticky-top navbar-light bg-light flex-column align-items-stretch p-3 shadow" style="top: 51px;">
+        <div class="offcanvas-md offcanvas-start col-md-3 col-xl-2" id="bdSidebar">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title">Mon CV</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#bdSidebar" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-md-none">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item"><i class="bi bi-globe"></i> Zurich, Suisse</li>
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Fonctions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading3">Parcours Recherche</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading4">Enseignement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading5">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading6">Parcours Associatif</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading7">Divers</a>
+                    </li>
+                    <br>
+                    <li class="nav-item"><a class="link-dark" href="https://www.linkedin.com/in/despas/"><i class="bi bi-linkedin"></i></a> <a class="link-dark" href="https://github.com/d-despas"><i class="bi bi-github"></i></a></li>
+                </ul>
+            </div>
+            <nav id="navbar" class="navbar sticky-top navbar-light bg-light flex-column align-items-stretch p-3 shadow d-none d-md-flex" style="top: 51px;">
                 <ul class="nav nav-pills flex-column">
                     <li class="nav-item text-center"><i class="bi bi-globe"></i> Zurich, Suisse</li>
                     <br>
